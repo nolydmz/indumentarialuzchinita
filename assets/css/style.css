@@ -1,0 +1,279 @@
+/* ESTILOS GENERLES*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient( rgb(240, 239, 239) rgb(255, 253, 253))
+
+}
+nav {
+    display: flex;
+    justify-content:space-between;
+}
+span {
+    display:inline-flex;
+    text-align: center;
+    background-color: white;
+    text-decoration-color: blanchedalmond;
+    margin: 2px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+span :hover {
+    background-color: black;
+    padding: 10px;
+    border-radius: 15px;
+}
+img {
+    border: solid ;
+}
+.transicion {
+    transition: all 2s;
+}
+.transicion:hover {
+    width: 500px;
+    height: 500px ;
+    border: #333 solid 10px;
+}
+.titulo {
+    grid-area: titulo;
+    background-color: #ffc0cb;
+    padding: 10px;
+    text-align: center;
+    border:solid;
+}
+.tituloDos {
+    background-color: rgb(252, 243, 227);
+    text-align: center;
+    padding: 5px;
+}
+
+.linkNav {
+    grid-area: linkNav;
+    display: block;
+    margin: 10px;
+    flex-direction:row;
+    justify-content: space-between;
+    
+}
+
+.catalogo {
+    grid-area: catalogo;
+    border:solid;
+    width: 90%;
+    
+}
+
+.contacto {
+    grid-area: contacto;
+    background-color: #ffc0cb;
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+    border: solid;
+}
+
+.comoComprar {
+    grid-area: comoComprar;
+    background-color: #ffc0cb;
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+    border:solid;
+    
+}
+
+.registrate {
+    grid-area: registrate;
+    background-color: #ffc0cb;
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+    border:solid;
+}
+
+.look {
+    grid-area: look;
+    background-color: #ffc0cb;
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+    border: solid;
+}
+
+.conocenos {
+    grid-area: conocenos;
+    background-color: #ffc0cb;
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+    border: solid;
+}
+
+footer {
+    grid-area: footer;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.piePagina {
+    margin: 20px;
+    text-align:justify;
+}
+form {
+    margin: 10px;
+}
+.tituloAnimado {
+    animation-name: titulo;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+}
+@keyframes titulo {
+  from{
+transform: translate(-200px);
+opacity: 0;
+  }
+
+   to{
+transform: translate(0);
+   }
+}
+
+
+#gridAreas {
+    display: grid;
+    grid-template-areas:
+        "titulp"
+        "linkNav"
+        "catalogo"
+        "contacto"
+        "comoComprar"
+        "registrate"
+        "look"
+        "conocenos"
+        "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 20% 1fr 1fr 1fr auto;
+}
+
+/*  Mobile */
+@media (max-width: 480px) {
+    body {
+        display: block;
+        background-color:rgb(252, 249, 249);
+    }
+    nav {
+        display: block;
+    }
+    .logo {
+        width: 10vh;
+    }
+    
+    span {
+        background-color: white;
+        text-decoration-color: blanchedalmond;
+        margin: 2px;
+        width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    span :hover {
+        background-color: black;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    .linkNav {
+        grid-area: linkNav;
+        display: block;
+        margin: 10px;
+        flex-direction:row;
+        justify-content: space-between;
+    
+    }
+    footer {
+        display: block;
+    }
+
+}
+
+/* Tablet */
+@media (min-width: 481px) and (min-width: 1023px) {
+    body {
+        display: block;
+        background-color:rgb(235, 231, 231);
+    }
+    nav {
+        display: flex;
+    }
+    .logo {
+        width: 10vh;
+    }
+    
+    span {
+        background-color: white;
+        text-decoration-color: blanchedalmond;
+        width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    span :hover {
+        background-color: black;
+        padding: 10px;
+        border-radius: 15px;
+    }
+    .linkNav {
+        grid-area: linkNav;
+        display: block;
+        margin: 10px;
+        flex-direction:row;
+        justify-content: space-between;
+    
+    }
+    footer {
+        display: block;
+    }
+
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    body {
+        background-color:rgb(235, 231, 231);
+    }
+    nav {
+        display: flex;
+        justify-content:space-between;
+    }
+    span {
+        display:inline-flex;
+        text-align: center;
+        background-color: white;
+        text-decoration-color: blanchedalmond;
+        margin: 2px;
+        width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    span :hover {
+        background-color: black;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    footer {
+        grid-area: footer;
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+    .piePagina {
+        margin: 20px;
+        text-align:justify;
+    }
+    form {
+        margin: 10px;
+    }
+    
+}
