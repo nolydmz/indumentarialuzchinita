@@ -8,10 +8,6 @@ body {
     background: linear-gradient( rgb(240, 239, 239) rgb(255, 253, 253))
 
 }
-nav {
-    display: flex;
-    justify-content:space-between;
-}
 span {
     display:inline-flex;
     text-align: center;
