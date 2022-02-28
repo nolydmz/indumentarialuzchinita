@@ -4,49 +4,6 @@
     padding: 0;
 }
 
-body {
-    background: linear-gradient( rgb(240, 239, 239) rgb(255, 253, 253))
-
-}
-span {
-    display:inline-flex;
-    text-align: center;
-    background-color: white;
-    text-decoration-color: blanchedalmond;
-    margin: 2px;
-    width: 100%;
-    padding: 20px;
-    border-radius: 10px;
-}
-span :hover {
-    background-color: black;
-    padding: 10px;
-    border-radius: 15px;
-}
-img {
-    border: solid ;
-}
-.transicion {
-    transition: all 2s;
-}
-.transicion:hover {
-    width: 500px;
-    height: 500px ;
-    border: #333 solid 10px;
-}
-.titulo {
-    grid-area: titulo;
-    background-color: #ffc0cb;
-    padding: 10px;
-    text-align: center;
-    border:solid;
-}
-.tituloDos {
-    background-color: rgb(252, 243, 227);
-    text-align: center;
-    padding: 5px;
-}
-
 .linkNav {
     grid-area: linkNav;
     display: block;
@@ -122,11 +79,7 @@ footer {
 form {
     margin: 10px;
 }
-.tituloAnimado {
-    animation-name: titulo;
-    animation-iteration-count: 1;
-    animation-duration: 5s;
-}
+
 @keyframes titulo {
   from{
 transform: translate(-200px);

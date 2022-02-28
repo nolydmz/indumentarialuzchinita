@@ -1,0 +1,36 @@
+$secciones: (
+    background-color: #ffc0cb,
+    margin: 5px,
+    padding: 20px,
+    text-align: center,
+    border:solid,
+);
+
+
+.registrate {
+    grid-area: registrate;
+    background-color: #ffc0cb;
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+    border: solid;;
+}
+.look {
+    grid-area: look;
+    @extend .registrate,
+}
+.conocenos {
+    grid-area: conocenos;
+    @extend .registrate,
+}
+.catalogo {
+    grid-area: catalogo;
+    border:solid;
+    width: 90%;
+    
+}
+.comoComprar {
+    grid-area: comoComprar;
+   @extend .registrate,
+    
+}

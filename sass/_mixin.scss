@@ -1,0 +1,7 @@
+@mixin fontSize ($tamanio, $peso) {
+    font-size:$tamanio ;
+    font-weight:$peso ;
+}
+.letraGrande {
+    @include fontSize(1rem,100 );
+}

@@ -1,0 +1,16 @@
+img {
+    border: solid ;
+}
+.transicion {
+    transition: all 2s;
+}
+.transicion:hover {
+    width: 500px;
+    height: 500px ;
+    border: #333 solid 10px;
+}
+.tituloAnimado {
+    animation-name: titulo;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+}
