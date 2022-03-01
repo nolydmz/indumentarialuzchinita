@@ -19,6 +19,10 @@ $secciones: (
     grid-area: look;
     @extend .registrate,
 }
+.contacto {
+    grid-area: contacto;
+    @extend .registrate,
+}
 .conocenos {
     grid-area: conocenos;
     @extend .registrate,

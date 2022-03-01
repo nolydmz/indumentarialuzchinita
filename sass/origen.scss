@@ -8,7 +8,7 @@
 
 
 body {
-    background: linear-gradient rgb(240, 239, 239)
+    background: linear-gradient rgb(240, 239, 239);
     }
 
     span {
@@ -31,6 +31,15 @@ body {
 
 form {
     margin: 10px;
+}
+.box {
+    display: flex;
+}
+.texto {
+    margin: 10px;
+}
+.centrado {
+    margin: 5%;
 }
 
 @keyframes titulo {

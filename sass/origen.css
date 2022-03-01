@@ -22,7 +22,7 @@ img {
           animation-duration: 5s;
 }
 
-.registrate, .comoComprar, .conocenos, .look {
+.registrate, .comoComprar, .conocenos, .contacto, .look {
   grid-area: registrate;
   background-color: #ffc0cb;
   margin: 5px;
@@ -33,6 +33,10 @@ img {
 
 .look {
   grid-area: look;
+}
+
+.contacto {
+  grid-area: contacto;
 }
 
 .conocenos {
@@ -91,6 +95,18 @@ span:hover {
 
 form {
   margin: 10px;
+}
+
+.box {
+  display: flex;
+}
+
+.texto {
+  margin: 10px;
+}
+
+.centrado {
+  margin: 5%;
 }
 
 @-webkit-keyframes titulo {
