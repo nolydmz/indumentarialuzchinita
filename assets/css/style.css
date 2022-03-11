@@ -4,10 +4,6 @@
     padding: 0;
 }
 
-body {
-    background: linear-gradient( rgb(240, 239, 239) rgb(255, 253, 253))
-
-}
 span {
     display:inline-flex;
     text-align: center;
@@ -23,9 +19,7 @@ span :hover {
     padding: 10px;
     border-radius: 15px;
 }
-img {
-    border: solid ;
-}
+
 .transicion {
     transition: all 2s;
 }
